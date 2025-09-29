@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> ToDo List</title>
+  <link rel="stylesheet" href="tp2.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 style="text-align: center;">ToDo List</h1>
+      <p class="subtitle">Mes Missions du Jour</p>
+    </header>
+
+    <section class="controls">
+      <input id="taskInput" type="text" placeholder="Nouvelle tâche..." />
+      <button id="addBtn">Ajouter</button>
+      <button id="clearAllBtn" class="danger">Tout supprimer</button>
+    </section>
+
+    <section class="extras">
+      <input id="searchInput" type="text" placeholder="Rechercher..." />
+      <div class="counters">
+        <span id="totalCount">Total: 0</span>
+        <span id="doneCount">Terminées: 0</span>
+      </div>
+    </section>
+
+    <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+    <footer>
+      <small>Application de gestion de tâches</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
